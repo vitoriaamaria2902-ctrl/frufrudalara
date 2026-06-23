@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+{% load static %}
 <head>
+    <link rel="stylesheet" href="{% static 'frufrudalara/css/style.css' %}">
+</head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fru Fru da Lara</title>
+    <title>Fru Fru da Lara - Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- login -->
-    <section class="login">
-        <h1>Fru Fru da Lara</h1>
+    <div class="app-screen">
 
-        <form>
-            <label>Email</label>
-            <input type="email">
+        <a href="#" class="back-link">←</a>
 
-            <label>Senha</label>
-            <input type="password">
+        <div class="logo-area">
+            <h1 class="brand-title">Fru Fru da Lara</h1>
 
-            <button class="entrar">ENTRAR</button>
-            <button class="cadastro">SE CADASTRAR</button>
+            <div class="circle-bg"></div>
+            
+            <img src="{% static 'img/whatsapp-image-2026-05-12.png' %}" alt="Logo" class="logo-img">
+        </div>
 
-            <a href="#">Esqueceu a senha?</a>
+        <form class="form-area">
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email">
+            </div>
+
+            <div class="input-group">
+                <label>Senha</label>
+                <input type="password">
+            </div>
+
+            <button class="btn btn-primary" type="button">
+                ENTRAR
+            </button>
+
+            <button class="btn btn-secondary" type="button">
+                SE CADASTRAR
+            </button>
+
+            <a href="#" class="forgot-link">
+                Esqueceu a senha?
+            </a>
         </form>
-    </section>
+
+        <div class="deco-circle deco-left"></div>
+        <div class="deco-circle deco-right"></div>
+
+        <div class="dot dot1"></div>
+        <div class="dot dot2"></div>
+        <div class="dot dot3"></div>
+        <div class="dot dot4"></div>
+
+    </div>
+
 </body>
 </html>
