@@ -1,14 +1,10 @@
 from django.shortcuts import render
 
-# Create your views here.
-from django.shortcuts import render
-from django.http import HttpResponse
-
-def sobre (request):
-    return HttpResponse("sobre")
+def sobre(request):
+    return render(request, "frufrudalara/tela1.html")
 
 def login(request):
-    return HttpResponse("login")
+    return render(request, "frufrudalara/tela2.html")
 
 def produtos(request):
-    return HttpResponse("produtos")
+    return render(request, "frufrudalara/tela3.html")
