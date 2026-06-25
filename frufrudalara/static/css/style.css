@@ -1,151 +1,207 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:'Nunito', sans-serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #e6e1d3; /* Fundo principal agora é o bege claro */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
 }
 
-.app-screen{
-    width:390px;
-    min-height:844px;
-    background:#e6e1d3;
-    border-radius:35px;
-    position:relative;
-    padding:25px;
-    overflow:hidden;
+/* Container que ocupa a tela toda */
+.app-screen {
+    width: 100vw;
+    min-height: 100vh;
+    background: #e6e1d3;
+    position: relative;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.back-link{
-    text-decoration:none;
-    color:black;
-    font-size:40px;
+.back-link {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
 }
 
-.logo-area{
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    margin-top:10px;
+.logo-area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
-.circle-bg{
-    width:300px;
-    height:300px;
-    border:2px dashed #d8b0b0;
-    border-radius:50%;
-    position:absolute;
-    top:60px;
-    z-index:1;
+.circle-bg {
+    width: 280px;
+    height: 280px;
+    border: 2px dashed #d8b0b0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    z-index: 1;
 }
 
-.brand-title{
-    font-family:'Dancing Script', cursive;
-    color:#e48b98;
-    font-size:48px;
-    z-index:2;
-    margin-top:20px;
+.brand-title {
+    font-family: 'Dancing Script', cursive;
+    color: #e48b98;
+    font-size: clamp(40px, 8vw, 60px); /* Fonte cresce conforme a tela */
+    z-index: 2;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.logo-img{
-    width:150px;
-    height:auto;
-    z-index:3;
-    margin-top:20px;
+.logo-img {
+    width: 140px;
+    height: auto;
+    z-index: 3;
 }
 
-.form-area{
-    margin-top:40px;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-    position:relative;
-    z-index:5;
+/* Área do formulário mais larga no PC e centralizada */
+.form-area {
+    width: 100%;
+    max-width: 450px; /* Limite de largura para não ficar esticado demais */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    z-index: 5;
+    background: rgba(255, 255, 255, 0.3); /* Leve fundo para destacar no PC */
+    padding: 30px;
+    border-radius: 25px;
 }
 
-.input-group{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-label{
-    font-size:20px;
-    font-weight:bold;
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
 }
 
-input{
-    height:60px;
-    border:3px solid #d89c44;
-    border-radius:25px;
-    background:#f2e1c1;
-    padding:15px;
-    font-size:18px;
+/* Inputs menores e mais delicados */
+input {
+    height: 45px; /* Diminuído de 60px para 45px */
+    border: 2px solid #d89c44;
+    border-radius: 15px;
+    background: #f2e1c1;
+    padding: 0 15px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
 }
 
-.btn{
-    height:65px;
-    border:none;
-    border-radius:35px;
-    font-size:22px;
-    font-weight:bold;
-    cursor:pointer;
+input:focus {
+    border-color: #f48b95;
 }
 
-.btn-primary{
-    background:#f48b95;
-    color:white;
+.btn {
+    height: 55px; /* Diminuído levemente */
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 5px;
 }
 
-.btn-secondary{
-    background:transparent;
-    border:3px solid #2f8a3a;
-    color:#2f8a3a;
+.btn:hover {
+    filter: brightness(1.05);
+    transform: translateY(-2px);
 }
 
-.forgot-link{
-    text-align:center;
-    color:black;
-    font-size:18px;
+.btn-primary {
+    background: #f48b95;
+    color: white;
 }
 
-.deco-circle{
-    position:absolute;
-    width:160px;
-    height:160px;
-    background:#7ea07e;
-    border-radius:50%;
-    bottom:-50px;
-    z-index:1;
+.btn-secondary {
+    background: transparent;
+    border: 3px solid #2f8a3a;
+    color: #2f8a3a;
 }
 
-.deco-left{
-    left:-40px;
+.forgot-link {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 10px;
 }
 
-.deco-right{
-    right:-40px;
+.forgot-link:hover {
+    color: #000;
+    text-decoration: underline;
 }
 
-.dot{
-    width:18px;
-    height:18px;
-    background:#ff8a8a;
-    border-radius:50%;
-    position:absolute;
-    bottom:90px;
-    z-index:2;
+/* Decorações das pontas - ajustadas para o fundo da tela cheia */
+.deco-circle {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    background: #7ea07e;
+    border-radius: 50%;
+    bottom: -80px;
+    z-index: 1;
 }
 
-.dot1{ left:110px; }
-.dot2{ left:145px; }
-.dot3{ right:145px; }
-.dot4{ right:110px; }
+.deco-left {
+    left: -80px;
+}
 
+.deco-right {
+    right: -80px;
+}
+
+.dots-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background: #ff8a8a;
+    border-radius: 50%;
+}
+
+/* Ajustes para Celular */
+@media (max-width: 600px) {
+    .back-link {
+        left: 20px;
+        top: 20px;
+    }
+    
+    .form-area {
+        background: transparent;
+        padding: 10px;
+    }
+
+    .deco-circle {
+        width: 150px;
+        height: 150px;
+        bottom: -40px;
+    }
+}
