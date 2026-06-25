@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.menu{
+    font-size:30px;
+}
+
+.menu span{
+    font-size:20px;
+    margin-left:8px;
+}
+
+.logo{
+    text-align:center;
+}
+
+.logo h1{
+    color:#f8b4df;
+    font-size:42px;
+    font-family:Georgia, serif;
+    font-weight:normal;
+}
+
+.logo h2{
+    color:#555;
+    font-size:30px;
+    font-weight:normal;
+}
+
+.carrinho{
+    font-size:35px;
+    color:#ff5c8d;
+}
+
+/* Pesquisa */
+
+.pesquisa{
+    width:90%;
+    margin:20px auto;
+}
+
+.pesquisa input{
+    width:100%;
+    padding:14px;
+    border-radius:30px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+/* Menu */
+
+.menu-links{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.menu-links a{
+    background:#ffe3ef;
+    padding:12px 22px;
+    border-radius:25px;
+    text-decoration:none;
+    color:#ff5c8d;
+    font-weight:bold;
+}
+
+/* Banner */
+
+.banner{
+    width:95%;
+    margin:auto;
+}
+
+.banner img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* Título */
+
+.titulo{
+    margin:35px 25px 20px;
+    font-size:38px;
+    font-family:Georgia, serif;
+    font-weight:normal;
+}
+
+/* Cards */
+
+.produtos{
+    width:95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#ffeaf4;
+    border-radius:25px;
+    padding:15px;
+}
+
+.card img{
+    width:100%;
+    border-radius:20px;
+    display:block;
+}
+
+/* WhatsApp */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:35px;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.logo h1{
+    font-size:28px;
+}
+
+.logo h2{
+    font-size:18px;
+}
+
+.produtos{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}

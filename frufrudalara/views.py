@@ -8,3 +8,4 @@ def login(request):
 
 def produtos(request):
     return render(request, "frufrudalara/tela3.html")
+
