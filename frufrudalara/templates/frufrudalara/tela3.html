@@ -48,19 +48,15 @@
 <section class="produtos">
 
     <div class="card">
-        <img src="{% static 'img/image 2.png' %}">
-    </div>
+        {% for item in itens %}
 
-    <div class="card">
-        <img src="{% static 'img/image 3.png' %}">
-    </div>
+        <div class="card">
 
-    <div class="card">
-        <img src="{% static 'img/image 4.png' %}">
-    </div>
+            <img src="{{% static item.imagem %}">
 
-    <div class="card">
-        <img src="{% static 'img/image 5.png' %}">
+        </div>
+
+    {% endfor %}
     </div>
 
 </section>
