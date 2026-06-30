@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #1a1a1a; /* Fundo escuro para destacar o card como na imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-screen {
+    width: 390px;
+    min-height: 844px;
+    background: #e6e1d3;
+    border-radius: 35px;
+    position: relative;
+    padding: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.back-link {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.header-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand-title {
+    font-family: 'Dancing Script', cursive;
+    color: #e48b98;
+    font-size: 40px;
+    z-index: 2;
+    margin-bottom: -15px; /* Ajuste para sobrepor levemente o círculo */
+}
+
+.circle-bg {
+    width: 220px;
+    height: 220px;
+    border: 2px dashed #d8b0b0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-img {
+    width: 130px;
+    height: auto;
+}
+
+.section-title {
+    color: #e48b98;
+    font-size: 28px;
+    margin: 25px 0 20px 0;
+    font-weight: bold;
+}
+
+.content-area {
+    flex: 1;
+}
+
+.text-block p {
+    font-size: 17.5px;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.deco-circle {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: #7ea07e;
+    border-radius: 50%;
+    bottom: -50px;
+    z-index: 1;
+}
+
+.deco-left {
+    left: -40px;
+}
+
+.deco-right {
+    right: -40px;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 2;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    background: #ff8a8a;
+    border-radius: 50%;
+}

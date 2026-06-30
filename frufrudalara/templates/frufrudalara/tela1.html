@@ -1,73 +1,53 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <style>
-        p{
-            text-indent:30px;
-        }
-        h1{
-            color:bisque;
-        }
-       .logo-box{
-           width: 200px;
-           height: 200px;
-           background-color:deeppink;
-           border-radius:20px;
-           margin:20px auto;
-       }
-    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Fru Fru da Lara</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Sobre a Lara - Fru Fru da Lara</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{% static 'css/sobre.css' %}">
 </head>
 <body>
 
-    <section class="sobre">
+    <div class="app-screen">
+        <a href="#" class="back-link">←</a>
 
-        <header class="topo-sobre">
-            <span class="menu">☰</span>
-            <h2>Fru Fru da Lara</h2>
-        </header>
-
-        <main class="conteudo-sobre">
-            <h1>Sobre Nós</h1>
-
-            <div class="logo-box">
-            
+        <div class="header-area">
+            <div class="logo-container">
+                <h1 class="brand-title">Fru Fru da Lara</h1>
+                <div class="circle-bg">
+                    <img src="{% static 'img/maquina-costura.png' %}" alt="Máquina de Costura" class="about-img">
+                </div>
             </div>
+        </div>
 
-            <p>
-                A <strong>Fru Fru da Lara</strong> é uma loja especializada em
-                tapetes artesanais
-                <br> 
-                feitos com carinho, dedicação e atenção aos detalhes.
+        <main class="content-area">
+            <h2 class="section-title">Sobre a Lara</h2>
+            
+            <div class="text-block">
+                <p>Bem-vindo à nossa loja! A marca nasceu da paixão pela costura e do desejo de levar mais conforto para os lares através de tapetes de frufru de alta qualidade.</p>
                 
-            </p>
-
-            <p>
-                Produzimos tapetes para banheiro, cozinha, quartos infantis
-                e modelos personalizados para atender o gosto de cada cliente.
-            </p>
-
-            <p>
-                Também trabalhamos com <strong>encomendas personalizadas</strong>,
-                permitindo que o cliente escolha tamanho, cores e modelos.
-            </p>
-
-            <p>
-                Realizamos vendas para <strong>todo o Brasil</strong>, oferecendo
-                atendimento de qualidade e produtos feitos à mão com muito amor.
-            </p>
-
-            <button>Fale Conosco</button>
+                <p>A produção é liderada pela Maria (conhecida carinhosamente como Lara), uma costureira de 35 anos baseada em Natal, Rio Grande do Norte. Com uma experiência sólida de dois anos de vendas e contato direto com o público na feira local, a Lara transformou seu talento em um negócio focado em evolução constante e excelência no acabamento.</p>
+                
+                <p>Nosso compromisso vai além da beleza das peças. Garantimos uma compra 100% segura, atendimento transparente e produtos duráveis, feitos com dedicação para transformar o seu ambiente.</p>
+            </div>
         </main>
 
-    </section>
+        <div class="dots-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="deco-circle deco-left"></div>
+        <div class="deco-circle deco-right"></div>
+    </div>
 
 </body>
 </html>
-
-                                                                                                                                                                                                   
