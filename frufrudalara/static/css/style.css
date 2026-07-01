@@ -41,7 +41,7 @@ body {
     display:flex;
     flex-direction:column;
     align-items:center;
-    margin-bottom: 150px; /* Aumentado de 30px para 80px para empurrar o form para baixo */
+    margin-bottom: -50px; /* Aumentado de 30px para 80px para empurrar o form para baixo */
     width: 10%;
 }
 
