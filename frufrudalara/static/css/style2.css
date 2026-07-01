@@ -159,3 +159,57 @@ header{
 }
 
 }
+
+.produtos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin:40px;
+}
+
+.produto{
+    width:280px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+    overflow:hidden;
+    text-align:center;
+    transition:.3s;
+}
+
+.produto:hover{
+    transform:translateY(-5px);
+}
+
+.produto img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.produto h3{
+    margin-top:15px;
+}
+
+.produto p{
+    font-size:22px;
+    color:#ff5d8f;
+    font-weight:bold;
+}
+
+.produto button{
+    margin:15px;
+    padding:10px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ffc7da;
+    color:#ff4f85;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.produto button:hover{
+    background:#ff9cbc;
+    color:white;
+}

@@ -45,25 +45,39 @@
 
 <h2 class="titulo">Destaques</h2>
 
-<section class="produtos">
+{% load static %}
 
-    <div class="card">
-        {% for item in itens %}
+<div class="produtos">
 
-        <div class="card">
-
-            <img src="{{% static item.imagem %}">
-
-        </div>
-
-    {% endfor %}
+    <div class="produto">
+        <img src="{% static 'frufrudalara/img/img14.png' %}" alt="">
+        <h3>Tapete Flor Mostarda</h3>
+        <p>R$ 150,00</p>
+        <button>Comprar</button>
     </div>
 
-</section>
+    <div class="produto">
+        <img src="{% static 'frufrudalara/img/img13.png' %}" alt="">
+        <h3>Tapete Flor Lilás</h3>
+        <p>R$ 150,00</p>
+        <button>Comprar</button>
+    </div>
 
-<a href="#" class="whatsapp">
-    💬
-</a>
+    <div class="produto">
+        <img src="{% static 'frufrudalara/img/img12.png' %}" alt="">
+        <h3>Passadeira Flores Azul</h3>
+        <p>R$ 180,00</p>
+        <button>Comprar</button>
+    </div>
+
+    <div class="produto">
+        <img src="{% static 'frufrudalara/img/imagem.png' %}" alt="">
+        <h3>Passadeira Azul Claro</h3>
+        <p>R$ 180,00</p>
+        <button>Comprar</button>
+    </div>
+
+</div>
 
 </body>
 </html>
